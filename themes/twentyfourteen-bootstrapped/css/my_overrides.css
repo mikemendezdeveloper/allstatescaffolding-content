@@ -1,0 +1,67 @@
+.site {
+	max-width: none;
+}
+.site-content {
+	margin-left: 0px;
+}
+.content-area, .content-sidebar {
+	padding-top: 0px;
+}
+#page {
+	background: #EBE8E3;
+	background: red;
+}
+.navbar-brand {
+    padding: 4px;
+    margin-left: -10px; 
+}
+.navbar > .container .navbar-brand img {
+	margin-left: 7px;
+}
+#titleArea {
+	background: #ffffff;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 999
+}
+.fancybox-wrap {
+	top: 60px;
+}
+/* Helps push footer to the bottom */
+#primary {
+	min-height: 100vh;
+}
+.navbar-fixed-top {
+    top: 53px;
+}
+.navbar-collapse.collapse, .navbar-header, .navbar-fixed-top li, .navbar-fixed-top {
+    background: -webkit-gradient(linear, 0 100%, 0 0, from(#000000), color-stop(0.5, #303030), color-stop(0.51, #050505), to(#000000));
+	background: -webkit-linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%);
+	background: -moz-linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%);
+	background: -o-linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%);
+	background: linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.navbar-nav {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-collapse {
+	border-color: gray;
+}
+.navbar-fixed-top .in li {
+	border-bottom: 1px solid gray;
+}
+.navbar-default .navbar-nav > li > a {
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.page-template-page-templatesfull-width-home-php .navbar-fixed-top + .container {
+width: 100%;
+padding: 0px;
+}
+
+
+
+
