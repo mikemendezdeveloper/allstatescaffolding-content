@@ -42,7 +42,8 @@
 	
 	<div id="titleArea">
 		<div class="container">
-			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/02/logo.png" width="107" /></a>
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/logo-sm.png" height="50" /></a>
+			<span id="phone">1-888-628-6222</span>
 		</div>
 	</div>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -56,7 +57,7 @@
           </button>
         </div>
           <!-- Custom Arguments to create: Fixed navbar bootstrap-->
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'navbar-collapse collapse', 'menu_class' => 'nav navbar-nav' ) ); ?>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'navbar-collapse collapse', 'menu_class' => 'nav navbar-nav', 'walker' => new Bootstrap_Walker_Nav_Menu ) ); ?>
       </div>
     </div>
-	<div class="container">
+	<div id="main-content-area" class="container">

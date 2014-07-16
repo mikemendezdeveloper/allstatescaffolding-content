@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/capture-frame.html -->
+<html ng-app="spark.extension.content.captureFrame" class="ng-scope"><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/css/capture-frame.css">
+    <title></title>
+</head>
+<body ng-controller="captureController" class="ng-scope">
+<div class="container-main ng-hide" ng-show="captureState.capturing">
+    <div class="darkbox-container ng-hide" ng-show="captureState.dragging">
+        <div class="darkbox-quad darkbox-top"></div>
+        <div class="darkbox-quad darkbox-right"></div>
+        <div class="darkbox-quad darkbox-bottom"></div>
+        <div class="darkbox-quad darkbox-left"></div>
+    </div>
+    <div class="crosshair-container">
+        <div class="crosshair crosshair-horizontal"></div>
+        <div class="crosshair crosshair-vertical"></div>
+        <div class="dimension-info ng-binding" ng-bind="captureState.dimensionInfoString"></div>
+    </div>
+    <div class="help-text-container">
+        <span class="help-text"><i18n key="captureFrame_helpTextCaptureRegion">Drag out an area to capture</i18n></span>
+    </div>
+</div>
+<!-- ngIf: captureState.showOnboarding -->
+
+
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/vendor/angular/angular.js"></script>
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/js/common.js"></script>
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/js/extension.common.js"></script>
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/js/captureFrame.js"></script>
+
+</body></html>

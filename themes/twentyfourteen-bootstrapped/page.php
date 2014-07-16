@@ -10,6 +10,10 @@
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
  */
+include 'ChromePhp.php';
+    ChromePhp::log('Hello console!');
+    ChromePhp::log($_SERVER);
+    ChromePhp::warn('something went wrong!');
 
 get_header(); ?>
 

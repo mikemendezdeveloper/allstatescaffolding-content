@@ -571,3 +571,17 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 //Stop wysiwyg from adding p tags -mm
 remove_filter( 'the_content', 'wpautop');
 remove_filter( 'the_content', 'wpautop');
+
+
+// Add Twitter Bootstrap's standard 'active' class name to the active nav link item
+
+function add_active_class($classes, $item) {
+	if( $item->menu_item_parent == 0 && in_array('current-menu-item', $classes) ) {
+    $classes[] = "active";
+	}
+  
+  return $classes;
+}
+add_filter('nav_menu_css_class', 'add_active_class', 10, 2 );
+
+

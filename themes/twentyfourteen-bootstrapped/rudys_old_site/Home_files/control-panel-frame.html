@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/control-panel-frame.html -->
+<html ng-app="spark.extension.content.controlPanel" class="ng-scope"><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/css/control-panel.css">
+    <title></title>
+</head>
+<body ng-controller="controlPanelController" class="ng-scope">
+
+    <div class="control-panel-container">
+        <div class="capture-section-header">
+            <img ng-src="assets/img/control_panel/image-capture.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/image-capture.png">
+        </div>
+        <div class="image-capture-buttons">
+            <div class="capture-button-container">
+                <button class="capture-region-button" ng-click="controlPanel.startRegionCapture()">
+                    <img class="capture-button-img-normal" ng-src="assets/img/control_panel/region.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/region.png">
+                    <img class="capture-button-img-small" ng-src="assets/img/control_panel/region-small.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/region-small.png">
+                    <span><i18n key="controlPanel_RegionCaptureLabel">Region</i18n></span>
+                </button>
+            </div>
+            <div class="capture-button-container">
+                <button class="capture-visible-button" ng-click="controlPanel.startVisibleCapture()">
+                    <img class="capture-button-img-normal" ng-src="assets/img/control_panel/visible.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/visible.png">
+                    <img class="capture-button-img-small" ng-src="assets/img/control_panel/visible-small.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/visible-small.png">
+                    <span><i18n key="controlPanel_VisibleCaptureLabel">Visible</i18n></span>
+                </button>
+            </div>
+        </div>
+        <div class="capture-section-header">
+            <img ng-src="assets/img/control_panel/video-capture.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/video-capture.png">
+        </div>
+        <div class="video-capture-buttons">
+            <div class="capture-button-container">
+                <button class="capture-video-button" ng-click="controlPanel.startVideoCapture()">
+                    <img class="capture-button-img-normal" ng-src="assets/img/control_panel/desktop.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/desktop.png">
+                    <img class="capture-button-img-small" ng-src="assets/img/control_panel/desktop-small.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/desktop-small.png">
+                    <span><i18n key="controlPanel_DesktopCaptureLabel">Desktop</i18n></span>
+                </button>
+            </div>
+            <div class="capture-button-container">
+                <button class="mic-settings-button" ng-click="controlPanel.showMicSettings()">
+                    <img class="capture-button-img-normal" ng-src="assets/img/control_panel/mic.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/mic.png">
+                    <img class="capture-button-img-small" ng-src="assets/img/control_panel/mic-small.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/mic-small.png">
+                </button>
+            </div>
+        </div>
+        <div class="control-panel-footer">
+            <button class="control-panel-library-button" ng-click="controlPanel.openLibrary()">
+                <img class="capture-button-img-normal" ng-src="assets/img/control_panel/library.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/library.png">
+                <img class="capture-button-img-small" ng-src="assets/img/control_panel/library-small.png" src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/assets/img/control_panel/library-small.png">
+                <span><i18n key="controlPanel_LibraryLabel">Library</i18n></span>
+            </button>
+        </div>
+    </div>
+
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/vendor/angular/angular.js"></script>
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/vendor/angular-retina.js"></script>
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/js/common.js"></script>
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/js/extension.common.js"></script>
+<script src="chrome-extension://annopcfmbiofommjmcmcfmhklhgbhkce/js/controlPanel.js"></script>
+
+</body></html>

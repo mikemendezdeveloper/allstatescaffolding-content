@@ -63,7 +63,10 @@ function twentyfourteen_header_style() {
 
 	// If we get this far, we have custom styles.
 	?>
+	<link href='http://fonts.googleapis.com/css?family=Quantico:400,700' rel='stylesheet' type='text/css'>
+
 	<style type="text/css" id="twentyfourteen-header-css">
+
 	<?php
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :

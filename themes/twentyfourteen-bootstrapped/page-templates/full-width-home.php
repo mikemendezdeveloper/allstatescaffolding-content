@@ -33,17 +33,36 @@
 			        <li data-target="#myCarousel" data-slide-to="2"></li>
 			      </ol>
 			      <div class="carousel-inner">
-					<?php
+					
+						<div class="item active">
+							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_08721.jpg" height="500" /> 
+							<img class="col-xs-12 visible-xs" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_0872.jpg" height="500" />
+						</div>
+						<div class="item">
+							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_08721.jpg" height="500" /> 
+							<img class="col-xs-12 visible-xs" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_0872.jpg" height="500" />
+						</div>
+						<div class="item">
+							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_08721.jpg" height="500" /> 
+							<img class="col-xs-12 visible-xs" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_0872.jpg" height="500" />
+						</div>
+			      </div>
+			      	<div class="container hidden-xs">
+								<div class="carousel-caption col-sm-4 col-xs-4">
+									<h2 id="slogan">Safe. Dependable. Professional.</h2>
+								</div>
+					</div>
+			      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="sprite chevron-left"></span></a>
+			      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="sprite chevron-right"></span></a>
+			    </div><!-- /.carousel -->
+					<div id="home-content" class="container">
+						<?php
 						// Start the Loop.
 						while ( have_posts() ) : the_post();
-					      	// Include the page content template.
-							get_template_part( 'content', 'wysiwyg' ); 
+							get_template_part( 'content', 'wysiwyg' );
 						endwhile;
-					?>
-			      </div>
-			      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-			      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-			    </div><!-- /.carousel -->
+						?>
+					</div>
 			
 		</div><!-- #content -->
 	</div><!-- #primary -->
