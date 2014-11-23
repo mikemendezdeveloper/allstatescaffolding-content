@@ -1,20 +1,39 @@
+/* Just for reference. These variables don't actually work. This isn't a less file..
+// Extra small screen / phone
+$screen-xs: 480px !default;
+
+// Small screen / tablet
+$screen-sm: 768px !default;
+
+// Medium screen / desktop
+$screen-md: 992px !default;
+
+// Large screen / wide desktop
+$screen-lg: 1200px !default;
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+    /*
+     * styles go here
+*/
+
+body {
+	background: rgb(188, 188, 188) !important;
+}
+/*Admin Bar in view */
+body.admin-bar .navbar-fixed-top {
+margin-top: 32px;
+}
+/* End Admin view */
+
 .site {
 	max-width: none;
 }
 .site-content {
 	 margin-left: 0px; 
 }
+
 .content-area, .content-sidebar {
 	padding-top: 0px;
-}
-#titleArea span {
-	float: right;
-	margin-top: 30px;
-	font-size: 24px;
-	color: #ffffff;
-	text-shadow: 2px 2px 4px #383838;
-	letter-spacing: 1px;
-	padding-right: 10px;
 }
 #content #slogan {
 	text-transform: uppercase;
@@ -23,8 +42,9 @@
 	color: #ffffff;
 	margin: 0px;
 	letter-spacing: 1px;
+	sdfasd: sdfjkasdlf;
 }
-.gallery #content, #home-content {
+.gallery #content, #home-content, .two-col-page #content {
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
 	padding-top: 35px;
@@ -34,6 +54,42 @@
 	border: 2px solid #E9E9E9;
 	padding-bottom: 45px;
 }
+/* Phone number */
+#phone {
+	float: right;
+	margin-top: 23px;
+	font-size: 18px;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #383838;
+	letter-spacing: 1px;
+	padding-right: 10px;
+}
+@media (min-width: 768px) {
+	#phone {
+		font-size: 24px; 
+		margin-top: 30px;
+	}
+	.site-footer .sepBar {
+		display: inline !important;
+	}
+	.site-footer li {
+		display: inline !important;
+	}
+}
+
+/* Util Styles */
+.u-upper {
+	text-transform: uppercase;
+}
+.u-capitalize {
+	text-transform: capitalize;
+}
+/* Size images to column */
+.img-width-100 img {
+	width: 100%;
+}
+
+
 /* HomePage Specific */
 #home-content {
 	margin-left: auto;
@@ -41,6 +97,26 @@
 	margin-top: 35px;
 	margin-bottom: 40px;
 	padding: 40px;
+}
+#hp-body-copy{
+	margin-bottom: 20px;
+}
+.hp-thumbnails > div{
+	padding-left: 0px;
+	margin-bottom: 20px;
+}
+.hp-thumbnail {
+	max-height: 150px; 
+	overflow: hidden;
+}
+#content .hp-thumb-title {
+	font-size: 17px;
+	background: rgb(180, 32, 32);
+	margin: 0px;
+	padding: 8px;
+	color: white;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 a.seal {
 margin: 40px auto;
@@ -54,6 +130,7 @@ color: rgb(144, 144, 144);
 background: rgb(226, 226, 226);
 border-radius: 10px;
 box-shadow: 1px 1px 2px rgb(178, 178, 178);
+padding: 20px;
 }
 .sealText{
     color: rgb(64, 64, 64);
@@ -116,10 +193,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 .fancybox-wrap {
 	top: 60px;
 }
-/* Helps push footer to the bottom */
-#primary {
-	min-height: 100vh;
-}
 .navbar-fixed-top {
     top: 80px;
 }
@@ -141,10 +214,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 		background: -moz-linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%);
 		background: -o-linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%);
 		background: linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-	}
+	
+		font-family: 'Quantico', sans-serif;
+}
 	.navbar-default .navbar-nav > .active > a {
 		color: #ffffff;
-		text-shadow: 1px 2px 13px red;
+		text-shadow: 1px 2px 13px rgb(161, 161, 161);
 	}
 	.navbar-default .navbar-nav > .active > a:hover {
 		color: #ffffff;
@@ -169,7 +244,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {	
 	background-color: transparent;
 	color: #ffffff;
-	text-shadow: 1px 2px 13px red;
 }
 ul.dropdown-menu li {
 	background: #000000;
@@ -205,7 +279,7 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 	margin-top: 104px;
 	/* background: #ffffff; */
 }
-.main-content.gallery {
+.main-content.gallery, .main-content.two-col-page {
 	margin-top: 60px;
 }
 .carousel-inner img {
@@ -222,10 +296,6 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 }
 .ngg-gallery-thumbnail img {
 	margin: 4px 4px 4px 0px;
-}
-
-.site-info a{
-	display: none;
 }
 
 .slideshowlink a {
@@ -285,8 +355,10 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 	border-radius: 0px 6px 0px 0px;
 }
 .carousel-indicators {
+	display: none;
 	bottom: 0px;
 }
+/*
 .carousel-indicators li, .carousel-indicators .active{
 	background: red;
 	opacity: .6;
@@ -297,7 +369,28 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 	height: 15px;
 	width: 15px;
 }
+*/
 .project-gallery{
     padding-left: 0px;
 }
+/* Footer */
+.site-footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+}
+.site-footer .sepBar {
+	padding: 0 10px;
+	display: none;
+}
+.site-footer ul {
+	margin: 0 auto;
+	text-align: center;
+}
+.site-footer li {
+	list-style: none;
+	display: block;
+	font-size: 14px;
+}
+
 

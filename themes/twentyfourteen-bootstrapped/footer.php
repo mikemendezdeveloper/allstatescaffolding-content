@@ -19,7 +19,12 @@
 
 			<div class="site-info">
 				<?php do_action( 'twentyfourteen_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyfourteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfourteen' ), 'WordPress' ); ?></a>
+				<ul>
+					<li>AllState Scaffolding: 1-888-628-6222 <span class="sepBar">|</span></li>
+					<li>Vacaville Office: 1-707-448-4100 <span class="sepBar">|</span></li>
+					<li>Sacramento Office: 1-916-441-5900 <span class="sepBar">|</span></li>
+					<li><a href="allstatescaffolding@yahoo.com">Email: allstatescaffolding@yahoo.com</a></li>
+				</ul>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 

@@ -35,16 +35,16 @@
 			      <div class="carousel-inner">
 					
 						<div class="item active">
-							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_08721.jpg" height="500" /> 
-							<img class="col-xs-12 visible-xs" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_0872.jpg" height="500" />
+							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="/wp-content/uploads/2014/10/DSC_08721.jpg" height="500" /> 
+							<img class="col-xs-12 visible-xs" alt="First slide" src="/wp-content/uploads/2014/10/DSC_0872.jpg" height="500" />
 						</div>
 						<div class="item">
-							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_08721.jpg" height="500" /> 
-							<img class="col-xs-12 visible-xs" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_0872.jpg" height="500" />
+							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="/wp-content/uploads/2014/10/DSC_08721.jpg" height="500" /> 
+							<img class="col-xs-12 visible-xs" alt="First slide" src="/wp-content/uploads/2014/10/DSC_0872.jpg" height="500" />
 						</div>
 						<div class="item">
-							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_08721.jpg" height="500" /> 
-							<img class="col-xs-12 visible-xs" alt="First slide" src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/DSC_0872.jpg" height="500" />
+							<img class="col-xs-12 visible-sm visible-md visible-lg" alt="First slide" src="/wp-content/uploads/2014/10/DSC_08721.jpg" height="500" /> 
+							<img class="col-xs-12 visible-xs" alt="First slide" src="/wp-content/uploads/2014/10/DSC_0872.jpg" height="500" />
 						</div>
 			      </div>
 			      	<div class="container hidden-xs">

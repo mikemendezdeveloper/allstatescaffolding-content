@@ -42,7 +42,7 @@
 	
 	<div id="titleArea">
 		<div class="container">
-			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://localhost:8888/wordpress/allstatescaffolding/wp-content/uploads/2014/03/logo-sm.png" height="50" /></a>
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/2014/10/logo-sm.png" height="50" /></a>
 			<span id="phone">1-888-628-6222</span>
 		</div>
 	</div>
